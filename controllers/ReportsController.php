@@ -11,7 +11,7 @@ class ReportsController extends Controller
         return $this->render('index');
     }
 
-        public function actionReferout($date1=null,$date2=null,$hospname=null){
+        public function actionReferout($date1=null,$date2=null,$hospname=null,$cc=null){
         
         if ($date1 == null) {
             $date1 = date('Y-m-d');
@@ -26,7 +26,7 @@ AND ro.refer_type='2'
 AND ro.refer_date BETWEEN '$date1' AND '$date2'
 GROUP BY ro.refer_hospcode
 ORDER BY ho.`name`";
-        $connection = Yii::$app->db3;
+        $connection = Yii::$app->db2;
         $data = $connection->createCommand($sql)->queryAll();
         
          for ($i = 0; $i < sizeof($data); $i++) {            

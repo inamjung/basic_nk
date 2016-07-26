@@ -54,14 +54,14 @@ $config = [
             'password' => 'sa',
             'charset' => 'utf8',
         ],
-        'db3' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=dhdc2',
-            'username' => 'sa',
-            'password' => 'sa',
-            'charset' => 'utf8',
-            
-        ], 
+//        'db3' => [
+//            'class' => 'yii\db\Connection',
+//            'dsn' => 'mysql:host=localhost;dbname=dhdc2',
+//            'username' => 'sa',
+//            'password' => 'sa',
+//            'charset' => 'utf8',
+//            
+//        ], 
     /*
       'urlManager' => [
       'enablePrettyUrl' => true,
